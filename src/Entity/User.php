@@ -140,6 +140,11 @@ class User extends BaseUser
      */
     private $assignedSoftware;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $authCode;
+
 
     public function __construct()
     {
@@ -788,6 +793,26 @@ class User extends BaseUser
         }
 
         return $this;
+    }
+
+    public function isEmailAuthEnabled(): bool
+    {
+        return true; // This can be a persisted field to switch email code authentication on/off
+    }
+
+    public function getEmailAuthRecipient(): string
+    {
+        return $this->email;
+    }
+
+    public function getEmailAuthCode(): string
+    {
+        return $this->authCode;
+    }
+
+    public function setEmailAuthCode(string $authCode): void
+    {
+        $this->authCode = $authCode;
     }
 
 }

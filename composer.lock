@@ -1,22 +1,84 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "2cd3aeab8073f843a2adc4ef7c365a74",
-    "packages": [
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "053882a41b8ecde03507eb83219f23e1",
+  "packages": [
+    {
+      "name": "beberlei/assert",
+      "version": "v3.2.7",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/beberlei/assert.git",
+        "reference": "d63a6943fc4fd1a2aedb65994e3548715105abcf"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/beberlei/assert/zipball/d63a6943fc4fd1a2aedb65994e3548715105abcf",
+        "reference": "d63a6943fc4fd1a2aedb65994e3548715105abcf",
+        "shasum": ""
+      },
+      "require": {
+        "ext-ctype": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-simplexml": "*",
+        "php": "^7"
+      },
+      "require-dev": {
+        "friendsofphp/php-cs-fixer": "*",
+        "phpstan/phpstan-shim": "*",
+        "phpunit/phpunit": ">=6.0.0 <8"
+      },
+      "suggest": {
+        "ext-intl": "Needed to allow Assertion::count(), Assertion::isCountable(), Assertion::minCount(), and Assertion::maxCount() to operate on ResourceBundles"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Assert\\": "lib/Assert"
+        },
+        "files": [
+          "lib/Assert/functions.php"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-2-Clause"
+      ],
+      "authors": [
         {
-            "name": "core23/dompdf-bundle",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/core23/DompdfBundle.git",
-                "reference": "a53b0784f0b3bb6f200d9a74961ae7117ae15352"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/core23/DompdfBundle/zipball/a53b0784f0b3bb6f200d9a74961ae7117ae15352",
+          "name": "Benjamin Eberlei",
+          "email": "kontakt@beberlei.de",
+          "role": "Lead Developer"
+        },
+        {
+          "name": "Richard Quadling",
+          "email": "rquadling@gmail.com",
+          "role": "Collaborator"
+        }
+      ],
+      "description": "Thin assertion library for input validation in business models.",
+      "keywords": [
+        "assert",
+        "assertion",
+        "validation"
+      ],
+      "time": "2019-12-19T17:51:41+00:00"
+    },
+    {
+      "name": "core23/dompdf-bundle",
+      "version": "2.6.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/core23/DompdfBundle.git",
+        "reference": "a53b0784f0b3bb6f200d9a74961ae7117ae15352"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/core23/DompdfBundle/zipball/a53b0784f0b3bb6f200d9a74961ae7117ae15352",
                 "reference": "a53b0784f0b3bb6f200d9a74961ae7117ae15352",
                 "shasum": ""
             },
@@ -1530,26 +1592,91 @@
                     "email": "goetas@gmail.com"
                 }
             ],
-            "description": "Class/method/property metadata management in PHP",
-            "keywords": [
-                "annotations",
-                "metadata",
-                "xml",
-                "yaml"
-            ],
-            "time": "2020-06-06T16:52:59+00:00"
+          "description": "Class/method/property metadata management in PHP",
+          "keywords": [
+            "annotations",
+            "metadata",
+            "xml",
+            "yaml"
+          ],
+          "time": "2020-06-06T16:52:59+00:00"
+        },
+    {
+      "name": "lcobucci/jwt",
+      "version": "3.3.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/lcobucci/jwt.git",
+        "reference": "56f10808089e38623345e28af2f2d5e4eb579455"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/lcobucci/jwt/zipball/56f10808089e38623345e28af2f2d5e4eb579455",
+        "reference": "56f10808089e38623345e28af2f2d5e4eb579455",
+        "shasum": ""
+      },
+      "require": {
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "php": "^5.6 || ^7.0"
+      },
+      "require-dev": {
+        "mikey179/vfsstream": "~1.5",
+        "phpmd/phpmd": "~2.2",
+        "phpunit/php-invoker": "~1.1",
+        "phpunit/phpunit": "^5.7 || ^7.3",
+        "squizlabs/php_codesniffer": "~2.3"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.1-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Lcobucci\\JWT\\": "src"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Luís Otávio Cobucci Oblonczyk",
+          "email": "lcobucci@gmail.com",
+          "role": "Developer"
+        }
+      ],
+      "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+      "keywords": [
+        "JWS",
+        "jwt"
+      ],
+      "funding": [
+        {
+          "url": "https://github.com/lcobucci",
+          "type": "github"
         },
         {
-            "name": "league/flysystem",
-            "version": "1.0.69",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
+          "url": "https://www.patreon.com/lcobucci",
+          "type": "patreon"
+        }
+      ],
+      "time": "2020-05-22T08:21:12+00:00"
+    },
+    {
+      "name": "league/flysystem",
+      "version": "1.0.69",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/thephpleague/flysystem.git",
+        "reference": "7106f78428a344bc4f643c233a94e48795f10967"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
                 "reference": "7106f78428a344bc4f643c233a94e48795f10967",
                 "shasum": ""
             },
@@ -2841,26 +2968,95 @@
                     "name": "Raphael Schweikert"
                 }
             ],
-            "description": "Parser for CSS Files written in PHP",
-            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
-            "keywords": [
-                "css",
-                "parser",
-                "stylesheet"
-            ],
-            "time": "2020-06-01T09:10:00+00:00"
+          "description": "Parser for CSS Files written in PHP",
+          "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+          "keywords": [
+            "css",
+            "parser",
+            "stylesheet"
+          ],
+          "time": "2020-06-01T09:10:00+00:00"
         },
+    {
+      "name": "scheb/two-factor-bundle",
+      "version": "v4.18.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/scheb/two-factor-bundle.git",
+        "reference": "37ec5f078ce565aa408d1279060353de6ad8cd3b"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/scheb/two-factor-bundle/zipball/37ec5f078ce565aa408d1279060353de6ad8cd3b",
+        "reference": "37ec5f078ce565aa408d1279060353de6ad8cd3b",
+        "shasum": ""
+      },
+      "require": {
+        "lcobucci/jwt": "^3.2",
+        "paragonie/constant_time_encoding": "^2.2",
+        "php": "^7.1.3",
+        "spomky-labs/otphp": "^9.1|^10.0",
+        "symfony/config": "^3.4|^4.0|^5.0",
+        "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+        "symfony/event-dispatcher": "^3.4|^4.0|^5.0",
+        "symfony/framework-bundle": "^3.4|^4.0|^5.0",
+        "symfony/http-foundation": "^3.4|^4.0|^5.0",
+        "symfony/http-kernel": "^3.4|^4.0|^5.0",
+        "symfony/property-access": "^3.4|^4.0|^5.0",
+        "symfony/security-bundle": "^3.4|^4.0|^5.0",
+        "symfony/twig-bundle": "^3.4|^4.0|^5.0"
+      },
+      "require-dev": {
+        "doctrine/persistence": "^1.3|^2.0",
+        "escapestudios/symfony2-coding-standard": "^3.9",
+        "phpunit/phpunit": "^7.0|^8.0|^9.0",
+        "squizlabs/php_codesniffer": "^3.5",
+        "swiftmailer/swiftmailer": "^6.0",
+        "symfony/polyfill-php80": "^1.15",
+        "symfony/yaml": "^3.4|^4.0|^5.0",
+        "vimeo/psalm": "^3.11"
+      },
+      "type": "symfony-bundle",
+      "autoload": {
+        "psr-4": {
+          "Scheb\\TwoFactorBundle\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
         {
-            "name": "sensio/framework-extra-bundle",
-            "version": "v5.5.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "c76bb1c5c67840ecb6d9be8e9d8d7036e375e317"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/c76bb1c5c67840ecb6d9be8e9d8d7036e375e317",
+          "name": "Christian Scheb",
+          "email": "me@christianscheb.de"
+        }
+      ],
+      "description": "Provides two-factor authentication for Symfony applications",
+      "homepage": "https://github.com/scheb/two-factor-bundle",
+      "keywords": [
+        "2fa",
+        "Authentication",
+        "symfony",
+        "two-factor",
+        "two-step"
+      ],
+      "time": "2020-06-03T13:11:55+00:00"
+    },
+    {
+      "name": "sensio/framework-extra-bundle",
+      "version": "v5.5.5",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
+        "reference": "c76bb1c5c67840ecb6d9be8e9d8d7036e375e317"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/c76bb1c5c67840ecb6d9be8e9d8d7036e375e317",
                 "reference": "c76bb1c5c67840ecb6d9be8e9d8d7036e375e317",
                 "shasum": ""
             },
@@ -2967,26 +3163,97 @@
                 }
             ],
             "description": "Symfony3|4 application versioning, simple console command to manage version (with providers e.g. git tag) of your application using Semantic Versioning 2.0.0 recommendations",
-            "homepage": "https://github.com/shivas/versioning-bundle",
-            "keywords": [
-                "semantic",
-                "semver",
-                "version",
-                "versioning"
-            ],
-            "time": "2019-12-08T15:52:26+00:00"
+          "homepage": "https://github.com/shivas/versioning-bundle",
+          "keywords": [
+            "semantic",
+            "semver",
+            "version",
+            "versioning"
+          ],
+          "time": "2019-12-08T15:52:26+00:00"
+        },
+    {
+      "name": "spomky-labs/otphp",
+      "version": "v10.0.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Spomky-Labs/otphp.git",
+        "reference": "f44cce5a9db4b8da410215d992110482c931232f"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Spomky-Labs/otphp/zipball/f44cce5a9db4b8da410215d992110482c931232f",
+        "reference": "f44cce5a9db4b8da410215d992110482c931232f",
+        "shasum": ""
+      },
+      "require": {
+        "beberlei/assert": "^3.0",
+        "ext-mbstring": "*",
+        "paragonie/constant_time_encoding": "^2.0",
+        "php": "^7.2|^8.0",
+        "thecodingmachine/safe": "^0.1.14|^1.0"
+      },
+      "require-dev": {
+        "php-coveralls/php-coveralls": "^2.0",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-beberlei-assert": "^0.12",
+        "phpstan/phpstan-deprecation-rules": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12",
+        "phpstan/phpstan-strict-rules": "^0.12",
+        "phpunit/phpunit": "^8.0",
+        "thecodingmachine/phpstan-safe-rule": "^1.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "v10.0": "10.0.x-dev",
+          "v9.0": "9.0.x-dev",
+          "v8.3": "8.3.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "OTPHP\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Florent Morselli",
+          "homepage": "https://github.com/Spomky"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
+          "name": "All contributors",
+          "homepage": "https://github.com/Spomky-Labs/otphp/contributors"
+        }
+      ],
+      "description": "A PHP library for generating one time passwords according to RFC 4226 (HOTP Algorithm) and the RFC 6238 (TOTP Algorithm) and compatible with Google Authenticator",
+      "homepage": "https://github.com/Spomky-Labs/otphp",
+      "keywords": [
+        "FreeOTP",
+        "RFC 4226",
+        "RFC 6238",
+        "google authenticator",
+        "hotp",
+        "otp",
+        "totp"
+      ],
+      "time": "2020-01-28T09:24:19+00:00"
+    },
+    {
+      "name": "swiftmailer/swiftmailer",
+      "version": "v6.2.3",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/swiftmailer/swiftmailer.git",
+        "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
                 "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
                 "shasum": ""
             },
@@ -7312,26 +7579,159 @@
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
+              {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+              }
             ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2020-05-20T08:37:50+00:00"
+          "description": "Symfony Yaml Component",
+          "homepage": "https://symfony.com",
+          "time": "2020-05-20T08:37:50+00:00"
         },
-        {
-            "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "2.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "dda2ee426acd6d801d5b7fd1001cde9b5f790e15"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/dda2ee426acd6d801d5b7fd1001cde9b5f790e15",
+    {
+      "name": "thecodingmachine/safe",
+      "version": "v1.1.3",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/thecodingmachine/safe.git",
+        "reference": "9f277171e296a3c8629c04ac93ec95ff0f208ccb"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/9f277171e296a3c8629c04ac93ec95ff0f208ccb",
+        "reference": "9f277171e296a3c8629c04ac93ec95ff0f208ccb",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.2"
+      },
+      "require-dev": {
+        "phpstan/phpstan": "^0.12",
+        "squizlabs/php_codesniffer": "^3.2",
+        "thecodingmachine/phpstan-strict-rules": "^0.12"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "0.1-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Safe\\": [
+            "lib/",
+            "generated/"
+          ]
+        },
+        "files": [
+          "generated/apache.php",
+          "generated/apc.php",
+          "generated/apcu.php",
+          "generated/array.php",
+          "generated/bzip2.php",
+          "generated/classobj.php",
+          "generated/com.php",
+          "generated/cubrid.php",
+          "generated/curl.php",
+          "generated/datetime.php",
+          "generated/dir.php",
+          "generated/eio.php",
+          "generated/errorfunc.php",
+          "generated/exec.php",
+          "generated/fileinfo.php",
+          "generated/filesystem.php",
+          "generated/filter.php",
+          "generated/fpm.php",
+          "generated/ftp.php",
+          "generated/funchand.php",
+          "generated/gmp.php",
+          "generated/gnupg.php",
+          "generated/hash.php",
+          "generated/ibase.php",
+          "generated/ibmDb2.php",
+          "generated/iconv.php",
+          "generated/image.php",
+          "generated/imap.php",
+          "generated/info.php",
+          "generated/ingres-ii.php",
+          "generated/inotify.php",
+          "generated/json.php",
+          "generated/ldap.php",
+          "generated/libevent.php",
+          "generated/libxml.php",
+          "generated/lzf.php",
+          "generated/mailparse.php",
+          "generated/mbstring.php",
+          "generated/misc.php",
+          "generated/msql.php",
+          "generated/mssql.php",
+          "generated/mysql.php",
+          "generated/mysqli.php",
+          "generated/mysqlndMs.php",
+          "generated/mysqlndQc.php",
+          "generated/network.php",
+          "generated/oci8.php",
+          "generated/opcache.php",
+          "generated/openssl.php",
+          "generated/outcontrol.php",
+          "generated/password.php",
+          "generated/pcntl.php",
+          "generated/pcre.php",
+          "generated/pdf.php",
+          "generated/pgsql.php",
+          "generated/posix.php",
+          "generated/ps.php",
+          "generated/pspell.php",
+          "generated/readline.php",
+          "generated/rpminfo.php",
+          "generated/rrd.php",
+          "generated/sem.php",
+          "generated/session.php",
+          "generated/shmop.php",
+          "generated/simplexml.php",
+          "generated/sockets.php",
+          "generated/sodium.php",
+          "generated/solr.php",
+          "generated/spl.php",
+          "generated/sqlsrv.php",
+          "generated/ssdeep.php",
+          "generated/ssh2.php",
+          "generated/stats.php",
+          "generated/stream.php",
+          "generated/strings.php",
+          "generated/swoole.php",
+          "generated/uodbc.php",
+          "generated/uopz.php",
+          "generated/url.php",
+          "generated/var.php",
+          "generated/xdiff.php",
+          "generated/xml.php",
+          "generated/xmlrpc.php",
+          "generated/yaml.php",
+          "generated/yaz.php",
+          "generated/zip.php",
+          "generated/zlib.php",
+          "lib/special_cases.php"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
+      "time": "2020-07-10T09:34:29+00:00"
+    },
+    {
+      "name": "tijsverkoyen/css-to-inline-styles",
+      "version": "2.2.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
+        "reference": "dda2ee426acd6d801d5b7fd1001cde9b5f790e15"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/dda2ee426acd6d801d5b7fd1001cde9b5f790e15",
                 "reference": "dda2ee426acd6d801d5b7fd1001cde9b5f790e15",
                 "shasum": ""
             },
