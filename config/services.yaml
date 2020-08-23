@@ -11,6 +11,7 @@ parameters:
     defaultEmail: '%env(DEFAULT_EMAIL)%'
     cronToken: '%env(CRON_TOKEN)%'
     cronIPAdress: '%env(CRON_IPADRESS)%'
+    ghostAPIUrl: '%env(ghostAPIUrl)%'
 
 services:
     # default configuration for services in *this* file

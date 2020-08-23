@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block CTA %}
+
+{% endblock %}
+
+{% block body %}
+    <h2 class="h2-responsive">DSGVO Gesetze vom Open Datenschutzcenter</h2>
+
+
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+            <ul class="list-group">
+                {% for key,i in 1..18 %}
+                    {% set artikel = 'artikel-' %}
+                    {% set dsgvo = '-dsgvo' %}
+                    <li class="list-group-item"><a
+                                href="{{ path('ghost',{'typ':'artikel', 'id':i, 'law':'dsgvo'}) }}">Artikel {{ i }}
+                            DSGVO</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+            {% for p in content['posts'] %}
+                <div class="card card-body mb-2">
+                    <b>
+                        {{ p['title'] }}
+                    </b>
+                    {{ p['html']|raw }}
+                    <p>
+                        {% trans with {'%a%':p['primary_author']['name'], '%c%':p['primary_tag']['name']} %}Von %a% in %c%{% endtrans %}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {{ dump(content) }}
+
+{% endblock %}
